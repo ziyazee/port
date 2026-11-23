@@ -1,8 +1,0 @@
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/AuthControllerTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/CustomerAccountControllerTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/DocumentControllerTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/PortApplicationTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/gps/WialonGpsProviderClientTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/service/OrderCreationServiceTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/service/TrackingLifecycleServiceTests.java
-/Users/mziya/port/porter-backend/src/test/java/com/porter/ksa/service/TrackingLifecycleTransitionPolicyTests.java

@@ -1,8 +1,0 @@
-com/porter/ksa/AuthControllerTests.class
-com/porter/ksa/service/TrackingLifecycleTransitionPolicyTests.class
-com/porter/ksa/PortApplicationTests.class
-com/porter/ksa/gps/WialonGpsProviderClientTests.class
-com/porter/ksa/DocumentControllerTests.class
-com/porter/ksa/service/OrderCreationServiceTests.class
-com/porter/ksa/service/TrackingLifecycleServiceTests.class
-com/porter/ksa/CustomerAccountControllerTests.class
