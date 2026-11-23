@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-aws}
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME:-com.mysql.cj.jdbc.Driver}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: ${SPRING_JPA_HIBERNATE_DDL_AUTO:-validate}
+      PORTER_DOCUMENT_STORAGE_PROVIDER: ${PORTER_DOCUMENT_STORAGE_PROVIDER:-gcs}
+      PORTER_GCS_BUCKET_NAME: ${PORTER_GCS_BUCKET_NAME}
+      PORTER_GCS_PROJECT_ID: ${PORTER_GCS_PROJECT_ID:-}
+      PORTER_GCS_OBJECT_PREFIX: ${PORTER_GCS_OBJECT_PREFIX:-documents}
+    ports:
+      - "${BACKEND_PORT:-8080}:8080"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./porter-frontend
+      dockerfile: Dockerfile
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
+    restart: unless-stopped

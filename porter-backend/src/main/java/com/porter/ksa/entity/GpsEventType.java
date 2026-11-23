@@ -1,0 +1,14 @@
+package com.porter.ksa.entity;
+
+public enum GpsEventType {
+    TRACKING_STARTED,
+    ENTERED_PICKUP,
+    LEFT_PICKUP,
+    ENTERED_DROP,
+    UNLOADING_STARTED,
+    LEFT_DROP,
+    WAITING_PENALTY_STARTED,
+    DELIVERED,
+    TRACKING_STOPPED,
+    MANUAL_OVERRIDE
+}

@@ -1,0 +1,8 @@
+.git
+.gradle
+build
+target
+out
+*.log
+.DS_Store
+porter-frontend
